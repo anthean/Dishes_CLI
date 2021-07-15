@@ -37,7 +37,7 @@ def main():
             dish_mngr.viewDishes()
 
         elif command == 2:
-            recipe = input("Enter the recipe name: ").lower()
+            recipe = input("Enter the recipe name: ")
             dish_mngr.addDish(recipe)
             print(f"{recipe} has been added.")
 
