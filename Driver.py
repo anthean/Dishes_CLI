@@ -37,12 +37,12 @@ def main():
             dish_mngr.viewDishes()
 
         elif command == 2:
-            recipe = input("Enter the recipe name: ")
+            recipe = input("Enter the recipe name: ").lower()
             dish_mngr.addDish(recipe)
             print(f"{recipe} has been added.")
 
         elif command == 3:
-            deleted_recipe = input("What recipe would you like to delete?: ")
+            deleted_recipe = input("What recipe would you like to delete?: ").lower()
             dish_mngr.deleteDish(deleted_recipe)
             print(f"{deleted_recipe} has been successfully deleted.")
 
