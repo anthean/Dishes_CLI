@@ -10,7 +10,7 @@ class DishHandler(Dish):
             print("Dish already exists!")
             return
 
-        self.dict[name] = Dish(name)
+        self.dict[name.lower()] = Dish(name) # All dish names will be lowercased
 
     def viewDishes(self):
         print('*' * 30) 
