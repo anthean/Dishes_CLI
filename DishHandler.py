@@ -11,9 +11,10 @@ class DishHandler(Dish):
             return
 
         self.dict[name.lower()] = Dish(name) # All dish names will be lowercased
+        print(f"{name} has been added.")
 
     def viewDishes(self):
-        print('*' * 30) 
+        print('*' * 30)
         print("Here are all of your dishes: ")
         print('*' * 30)
 
@@ -28,3 +29,4 @@ class DishHandler(Dish):
             return
 
         del self.dict[name]
+        print(f"{name} has been successfully deleted.")
